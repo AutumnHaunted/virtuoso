@@ -4,24 +4,23 @@ from pyexcel_ods import get_data
 
 card_type = 0
 file_maps = {
-    "http://cloud-3.steamusercontent.com/ugc/772865031540542706/585DBDDB6650A0462A6506B74B8B87A585FDFCD9/" : ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/back.png", None, None, None),
-    "http://cloud-3.steamusercontent.com/ugc/772865031540540794C98E93BB4F42DBEE03DC3198BA79FF79D57FFF92/"  : ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/no-border/SBLE_001-050.png", "SBLE",   1, 50),
-    "http://cloud-3.steamusercontent.com/ugc/772865031540547686F63C9013BC63CF97C7E37F5F30071B0757196A5C/"  : ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/no-border/SBLE_101-150.png", "SBLE", 101, 50),
-    "http://cloud-3.steamusercontent.com/ugc/1040841723868399691/3DA8B8223A717C8CC304783E667F47910566838E/": ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/no-border/SBLE_001-050.png", "SBLE",   1, 50),
-    "http://cloud-3.steamusercontent.com/ugc/1040841723868463096/DA4B589E5914F7E216778FE083B6A0089BE0E811/": ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/no-border/SBLE_051-100.png", "SBLE",  51, 50),
-    "http://cloud-3.steamusercontent.com/ugc/1040841723868471605/D0D25E461EC433E32B92C3FAE923AC6FBE009430/": ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/no-border/SBLE_101-150.png", "SBLE", 101, 50),
-    "http://cloud-3.steamusercontent.com/ugc/1040841723868477880/6E29E839C223CC3B7C87FAE4910A640570517171/": ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/no-border/LUNM_001-050.png", "LUNM",   1, 50),
-    "http://cloud-3.steamusercontent.com/ugc/1040841723868482039/6D328F694BA1BEBC28D8B7F6B0F68EE7E98246AC/": ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/no-border/LUNM_051-100.png", "LUNM",  51, 50)
+    "http://cloud-3.steamusercontent.com/ugc/772865031540542706/585DBDDB6650A0462A6506B74B8B87A585FDFCD9/" : ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/back.png", None, None, None),
+    "http://cloud-3.steamusercontent.com/ugc/772865031540540794C98E93BB4F42DBEE03DC3198BA79FF79D57FFF92/"  : ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/no-border/SBLE_001-050.png", "SBLE",   1, 50),
+    "http://cloud-3.steamusercontent.com/ugc/772865031540547686F63C9013BC63CF97C7E37F5F30071B0757196A5C/"  : ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/no-border/SBLE_101-150.png", "SBLE", 101, 50),
+    "http://cloud-3.steamusercontent.com/ugc/1040841723868399691/3DA8B8223A717C8CC304783E667F47910566838E/": ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/no-border/SBLE_001-050.png", "SBLE",   1, 50),
+    "http://cloud-3.steamusercontent.com/ugc/1040841723868463096/DA4B589E5914F7E216778FE083B6A0089BE0E811/": ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/no-border/SBLE_051-100.png", "SBLE",  51, 50),
+    "http://cloud-3.steamusercontent.com/ugc/1040841723868471605/D0D25E461EC433E32B92C3FAE923AC6FBE009430/": ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/no-border/SBLE_101-150.png", "LUNM",   1, 50),
+    "http://cloud-3.steamusercontent.com/ugc/1040841723868482039/6D328F694BA1BEBC28D8B7F6B0F68EE7E98246AC/": ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/no-border/LUNM_051-100.png", "LUNM",  51, 50)
 }
 file_maps_border = {
-    "http://cloud-3.steamusercontent.com/ugc/772865031540542706/585DBDDB6650A0462A6506B74B8B87A585FDFCD9/" : ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/back.png", None, None, None),
-    "http://cloud-3.steamusercontent.com/ugc/772865031540540794C98E93BB4F42DBEE03DC3198BA79FF79D57FFF92/"  : ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/border/SBLE_001-050.png", "SBLE",   1, 50),
-    "http://cloud-3.steamusercontent.com/ugc/772865031540547686F63C9013BC63CF97C7E37F5F30071B0757196A5C/"  : ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/border/SBLE_101-150.png", "SBLE", 101, 50),
-    "http://cloud-3.steamusercontent.com/ugc/1040841723868399691/3DA8B8223A717C8CC304783E667F47910566838E/": ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/border/SBLE_001-050.png", "SBLE",   1, 50),
-    "http://cloud-3.steamusercontent.com/ugc/1040841723868463096/DA4B589E5914F7E216778FE083B6A0089BE0E811/": ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/border/SBLE_051-100.png", "SBLE",  51, 50),
-    "http://cloud-3.steamusercontent.com/ugc/1040841723868471605/D0D25E461EC433E32B92C3FAE923AC6FBE009430/": ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/border/SBLE_101-150.png", "SBLE", 101, 50),
-    "http://cloud-3.steamusercontent.com/ugc/1040841723868477880/6E29E839C223CC3B7C87FAE4910A640570517171/": ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/border/LUNM_001-050.png", "LUNM",   1, 50),
-    "http://cloud-3.steamusercontent.com/ugc/1040841723868482039/6D328F694BA1BEBC28D8B7F6B0F68EE7E98246AC/": ("file://C:/Users/walke/Documents/Projects/other/virtuoso/images/atlas/border/LUNM_051-100.png", "LUNM",  51, 50)
+    "http://cloud-3.steamusercontent.com/ugc/772865031540542706/585DBDDB6650A0462A6506B74B8B87A585FDFCD9/" : ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/back.png", None, None, None),
+    "http://cloud-3.steamusercontent.com/ugc/772865031540540794C98E93BB4F42DBEE03DC3198BA79FF79D57FFF92/"  : ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/border/SBLE_001-050.png", "SBLE",   1, 50),
+    "http://cloud-3.steamusercontent.com/ugc/772865031540547686F63C9013BC63CF97C7E37F5F30071B0757196A5C/"  : ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/border/SBLE_101-150.png", "SBLE", 101, 50),
+    "http://cloud-3.steamusercontent.com/ugc/1040841723868399691/3DA8B8223A717C8CC304783E667F47910566838E/": ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/border/SBLE_001-050.png", "SBLE",   1, 50),
+    "http://cloud-3.steamusercontent.com/ugc/1040841723868463096/DA4B589E5914F7E216778FE083B6A0089BE0E811/": ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/border/SBLE_051-100.png", "SBLE",  51, 50),
+    "http://cloud-3.steamusercontent.com/ugc/1040841723868471605/D0D25E461EC433E32B92C3FAE923AC6FBE009430/": ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/border/SBLE_101-150.png", "SBLE", 101, 50),
+    "http://cloud-3.steamusercontent.com/ugc/1040841723868477880/6E29E839C223CC3B7C87FAE4910A640570517171/": ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/border/LUNM_001-050.png", "LUNM",   1, 50),
+    "http://cloud-3.steamusercontent.com/ugc/1040841723868482039/6D328F694BA1BEBC28D8B7F6B0F68EE7E98246AC/": ("https://raw.githubusercontent.com/AutumnHaunted/virtuoso/main/images/atlas/border/LUNM_051-100.png", "LUNM",  51, 50)
 }
 
 card_types = {

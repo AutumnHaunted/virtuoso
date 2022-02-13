@@ -1,0 +1,33 @@
+1. Moon of Moons
+Effect text changed from:
+"Entities in this map cannot prepare attacks or have attacks against them be prepared.
+'+ When an affected Entity destroys an opposing Entity in battle: draw 1 card.
+- During the End Phase: discard 1 random card."
+to:
+"Entities in this map cannot prepare attacks or be targeted by prepared attacks.
+'+ When an affected Entity destroys an opposing Entity in battle: draw 1 card.
+- During the End Phase: discard 1 random card."
+
+2. Octitroupe
+Effect text changed from:
+"Excavate 5 cards; Effect Play excavated "Octitro" Entities; during the End Phase: shuffle them into your deck."
+to:
+"Excavate 5 cards; Effect Play excavated "Octitro" Entities; during the End Phase: shuffle those entities into your deck."
+
+3. Bright White Sunburst Dragon
+Effect text changed from:
+"This card cannot be Direct Played. This card can only be Effect Played by destroying 3 LV 3 LEG/AST "Sunburst Dragon" Entities with different names. Once per turn: You can return this card to your hand; Effect Play the Entities used for this card's Play; When this card is destroyed by card effect: you can Effect Play the destroyed cards used for this card's Play.
+[M] Once per turn: You can destroy 1 opposing card or 1 random card in your opponent's hand."
+to:
+"This card cannot be Direct Played. This card can only be Effect Played by destroying 3 LV 3 LEG/AST "Sunburst Dragon" Entities with different names. Once per turn: You can return this card to your hand; Effect Play the Entities used for this card's Play. When this card is destroyed by card effect: you can Effect Play the destroyed cards used for this card's Play.
+[M] Once per turn: You can destroy 1 opposing card or 1 random card in your opponent's hand."
+
+4. Wishapon Observatory
+Effect text changed from:
+""Wishapon" Entities have advantage in this Map. When a "Wishapon" Entity is played in this Map: you can declare 1 card type; excavate 3 cards; add 1 excavated card of the declared type to your hand; shuffle your deck.
+'+ Once per turn, you can target 1 affected Entity; the effects and attacks of the target cannot be negated until the End Phase.
+- Once per turn, target 1 affected Entity; it cannot attack, and its effects are negated, until the End Phase."
+to:
+""Wishapon" Entities have advantage in this Map. When a "Wishapon" Entity is played in this Map: you can declare 1 card type; excavate 3 cards; add 1 excavated card of the declared type to your hand; then, or otherwise: shuffle your deck.
+'+ Once per turn, you can target 1 affected Entity; the effects and attacks of the target cannot be negated until the End Phase.
+- Once per turn, target 1 affected Entity; it cannot attack, and its effects are negated, until the End Phase."

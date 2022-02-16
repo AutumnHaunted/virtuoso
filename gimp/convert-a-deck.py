@@ -79,6 +79,7 @@ def convert_file(filepath, border = 0):
             if (cur_file_map.get(custom_deck.get("FaceURL"))):
                 custom_deck["FaceURL"] = cur_file_map.get(custom_deck.get("FaceURL"))[0]
             custom_deck["Type"] = card_type
+            custom_deck["BackIsHidden"] = True
         
         #print(deck_map)
         
@@ -90,8 +91,9 @@ def convert_file(filepath, border = 0):
                 if (cur_file_map.get(value.get("FaceURL"))):
                     value["FaceURL"] = cur_file_map.get(value.get("FaceURL"))[0]
                 value["Type"] = card_type
+                value["BackIsHidden"] = True
             
-            if (deck_map.get(deck_url)):
+            if (deck_map.get(deck_url) and cur_file_map.get(deck_url)):
                 card_ind = int(str(card.get("CardID"))[-2:])
                 path, set, set_start, set_end = cur_file_map.get(deck_url)
                 

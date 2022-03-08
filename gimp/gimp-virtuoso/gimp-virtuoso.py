@@ -343,8 +343,8 @@ def generate_card(directory, card, outDir, border = None):
             disadvantage.append(adv[1:])
     
     descTextSize = 16
-    if (len(card) >= 10):
-        descTextSize = int(str(card[9]))
+    if (len(card) >= 12):
+        descTextSize = int(str(card[11]))
     if (descTextSize == None or descTextSize <= 0):
         descTextSize = 16
     
